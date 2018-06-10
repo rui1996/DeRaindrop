@@ -11,11 +11,12 @@ Raindrops adhered to a glass window or camera lens can severely hamper the visib
 #### If you find the resource useful, please cite the following :- )
 
 ```
-@article{qian2017attentive,
-  title={Attentive Generative Adversarial Network for Raindrop Removal from a Single Image},
-  author={Qian, Rui and Tan, Robby T and Yang, Wenhan and Su, Jiajun and Liu, Jiaying},
-  journal={arXiv preprint arXiv:1711.10098},
-  year={2017}
+@InProceedings{Qian_2018_CVPR,
+author = {Qian, Rui and Tan, Robby T. and Yang, Wenhan and Su, Jiajun and Liu, Jiaying},
+title = {Attentive Generative Adversarial Network for Raindrop Removal From a Single Image},
+booktitle = {The IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
+month = {June},
+year = {2018}
 }
 ```
 
