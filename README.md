@@ -32,11 +32,20 @@ year = {2018}
 
 ## Installation:
 
-Install PyTorch and dependencies from http://pytorch.org 
+1. Clone this repo
+2. Install PyTorch and dependencies from http://pytorch.org 
+
+（**Note**: the code is suitable for PyTorch 0.3.1）
 
 ## Demo 
 
-Coming soon.
+The demo pictures are put under the directory `./demo/input/` and `./demo/output/` is a sample of the ouput of the model. If you want to generate your own, using the following code:
+
+```
+CUDA_VISIBLE_DEVICES=gpu_id python predict.py --mode demo --input_dir ./demo/input/ --output_dir ./demo/output/
+```
+
+
 
 ## Testing
 
