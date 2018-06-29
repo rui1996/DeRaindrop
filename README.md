@@ -30,6 +30,8 @@ year = {2018}
 2. Python 2.7
 3. NVIDIA GPU + CUDA CuDNN (CUDA 8.0)
 
+
+
 ## Installation:
 
 1. Clone this repo
@@ -37,9 +39,11 @@ year = {2018}
 
 （**Note**: the code is suitable for PyTorch 0.3.1）
 
+
+
 ## Demo 
 
-The demo pictures are put under the directory `./demo/input/` and `./demo/output/` is a sample of the ouput of the model. If you want to generate your own, using the following code:
+The demo pictures are put under the directory `./demo/input/` and `./demo/output/` is a sample of the ouput of the model. If you want to generate your own, use the following code:
 
 ```
 CUDA_VISIBLE_DEVICES=gpu_id python predict.py --mode demo --input_dir ./demo/input/ --output_dir ./demo/output/
@@ -47,10 +51,45 @@ CUDA_VISIBLE_DEVICES=gpu_id python predict.py --mode demo --input_dir ./demo/inp
 
 
 
-## Testing
-
-Coming soon.
-
 ## Dataset
 
-Coming soon.
+The whole dataset can be find here:
+
+https://drive.google.com/open?id=1e7R76s6vwUJxILOcAsthgDLPSnOrQ49K
+
+#####Training Set:
+
+861 image pairs for training.
+
+##### Testing Set A:
+
+For quantitative evaluation where the alignment of image pairs is good. A subset of testing set B.
+
+##### Testing Set B:
+
+239 image pairs for testing.
+
+ 
+
+## Testing
+
+##### For quantitative evaluation:
+
+Put the test_a dataset under the DeRaindrop directory, and run:
+
+```
+CUDA_VISIBLE_DEVICES=gpu_id python predict.py --mode test --input_dir ./test_a/data/ --gt_dir ./test_a/gt/
+```
+
+Note: Due to the mask of some information such as vehicle license plate number, the `PSNR` drop a little (0.06) compared to the result in the paper.
+
+##### For qualitative evaluation:
+
+Just similar to the demo. Just change the input directory and output directory as you like.
+
+
+
+## Contact
+
+If you have questions, you can contact `qianrui@pku.edu.cn`.
+

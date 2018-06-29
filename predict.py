@@ -74,8 +74,8 @@ if __name__ == '__main__':
         input_list = sorted(os.listdir(args.input_dir))
         gt_list = sorted(os.listdir(args.gt_dir))
         num = len(input_list)
-        cul_psnr = 0
-        cul_ssim = 0
+        cumulative_psnr = 0
+        cumulative_ssim = 0
         for i in range(num):
             print ('Processing image: %s'%(input_list[i]))
             img = cv2.imread(args.input_dir + input_list[i])
