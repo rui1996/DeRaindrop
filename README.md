@@ -57,13 +57,19 @@ The whole dataset can be find here:
 
 https://drive.google.com/open?id=1e7R76s6vwUJxILOcAsthgDLPSnOrQ49K
 
+
+
 ####Training Set:
 
 861 image pairs for training.
 
+
+
 ####Testing Set A:
 
 For quantitative evaluation where the alignment of image pairs is good. A subset of testing set B.
+
+
 
 ####Testing Set B:
 
